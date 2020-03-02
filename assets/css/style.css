@@ -1,4 +1,4 @@
-/* Foundational Page Styling */
+Foundational Page Styling
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -16,7 +16,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+    vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -115,6 +116,7 @@ a {
     a:hover {
         border-color: transparent;
     }
+
 /* Icon Styling */
 
 .icon {
@@ -148,7 +150,7 @@ a {
 
  /* Wrapper Styling */
 
- @-moz-keyframes wrapper {
+ /* @-moz-keyframes wrapper {
     0% {
         opacity: 0;
     }
@@ -199,7 +201,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 /* Background Styling */
 
@@ -703,6 +705,36 @@ a {
                 display: none;
             }
 
+#header footer {
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+    transition-delay: 1.25s;
+    position: absolute;
+    bottom: -7em;
+    margin: 0;
+    width: 100%;
+}
+
+input[type="button"].style2, input[type="submit"].style2, input[type="reset"].style2, button.style2, .button.style2 {
+                color: inherit;
+                background: rgba(0,0,0,0.05);
+                box-shadow: inset 0 0 0 1px #fff;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button, .button {
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    border-radius: 3em;
+    font-weight: 400;
+}
 /* Wide Media Queries*/
 
 @media screen and (max-width: 1680px) {
@@ -1064,4 +1096,5 @@ a {
 
 #header nav {
     padding: 0 1em;
-} }
+} 
+}

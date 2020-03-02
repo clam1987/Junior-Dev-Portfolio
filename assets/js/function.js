@@ -11,9 +11,9 @@ $window.on("touchmove", () => {
     return false;
 })
 
-$window.on("orientationchange", () => {
-    $body.scrollTop(0);
-})
+    $window.on("orientationchange", () => {
+        $body.scrollTop(0);
+    })
 
 
 // window.onload = function() { document.body.classList.remove('is-preload'); }
