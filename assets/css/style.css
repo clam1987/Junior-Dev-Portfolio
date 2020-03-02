@@ -65,6 +65,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Foundational Styling */
 
 html {
@@ -114,7 +115,6 @@ a {
     a:hover {
         border-color: transparent;
     }
-
 /* Icon Styling */
 
 .icon {
@@ -216,10 +216,10 @@ a {
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-/* Background is set here */
+/* Set your background with this */
 
-    background: #7abae0 url("../img/Hong-Kong.jpg") bottom left;
-    background-repeat: repeat-x space;
+    background: #348cb2 url("https://cdn.pixabay.com/photo/2018/01/17/14/50/downtown-3088351_1280.png") bottom left;
+    background-repeat: repeat-x;
     height: 100%;
     left: 0;
     opacity: 1;
@@ -292,11 +292,11 @@ a {
 }
 
 #bg {
-    background-size: 3000px auto;
+    background-size: 2250px auto;
     width: 6750px;
 }
-
 /* Overlay Styling */
+
 
 @-moz-keyframes overlay {
     0% {
@@ -356,7 +356,9 @@ a {
     width: 100%;
 }
 
+
 /* Main Section */
+
 
 #main {
     height: 100%;
@@ -701,7 +703,6 @@ a {
                 display: none;
             }
 
-
 /* Wide Media Queries*/
 
 @media screen and (max-width: 1680px) {
@@ -712,7 +713,7 @@ a {
             font-size: 13pt;
         }
 
-    /* Background */
+    /* BG */
 
         @-moz-keyframes bg {
             0% {
@@ -870,6 +871,7 @@ a {
     } 
 }
 
+
 /* Mobile Media Queries */
 
 @media screen and (max-width: 736px) {
@@ -958,28 +960,30 @@ a {
 
 /* Header */
 
-    #header h1 {
-        font-size: 2.5em;
-    }
-
-    #header p {
-        font-size: 1em;
-    }
-
-    #header nav {
-        font-size: 1em;
-    }
-
-        #header nav a:hover {
-            font-size: 1em;
-        }
-
-        #header nav a:active {
-            font-size: 1em;
-        } 
+#header h1 {
+    font-size: 2.5em;
 }
 
+#header p {
+    font-size: 1em;
+}
+
+#header nav {
+    font-size: 1em;
+}
+
+    #header nav a:hover {
+        font-size: 1em;
+    }
+
+    #header nav a:active {
+        font-size: 1em;
+    } 
+}
+
+
 /* Mobile Portrait Mode Media Querries */
+
 
 
 @media screen and (max-width: 480px) {
@@ -1058,7 +1062,6 @@ a {
 
 /* Header */
 
-    #header nav {
-        padding: 0 1em;
-    } 
-}
+#header nav {
+    padding: 0 1em;
+} }
