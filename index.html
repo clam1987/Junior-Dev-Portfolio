@@ -1,65 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="container__item landing-page-container">
-            <div class="content__wrapper">
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e70a0388d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style1.css" type="text/css" />
+  </head>
 
-                <header class="header">
-                    <div class="menu-icon header__item">
-                        <span class="menu-icon__line"></span>
-                    </div>
-
-                    <h1 class="heading header__item">Wilson Lam</h1>
-
-                    <ul class="social-container header__item">
-                        <li class="social__icon social__icon--fb">
-                            <img src="https://image.flaticon.com/icons/svg/1077/1077041.svg" alt="facebook">
-                        </li>
-                        <li class="social__icon social__icon--dr">
-                            <img src="https://image.flaticon.com/icons/svg/25/25631.svg" alt="dribbble">
-                        </li>
-                        <li class="social__icon social__icon--in">
-                            <img src="https://image.flaticon.com/icons/svg/1077/1077042.svg" alt="instagram">
-                        </li>
-                    </ul>
-                </header>
-
-                <p class="coords">N 49° 16' 35.173"  /  W 0° 42' 11.30"</p>
-
-                <div class="ellipses-container">
-
-                    <h2 class="greeting">Full Stack Developer</h2>
-
-                    <div class="ellipses ellipses__outer--thin">
-
-                        <div class="ellipses ellipses__orbit"></div>
-
-                    </div>
-
-                    <div class="ellipses ellipses__outer--thick"></div>
-                </div>
-
-                <div class="scroller">
-                    <p class="page-title">home</p>
-
-                    <div class="timeline">
-                        <span class="timeline__unit"></span>
-                        <span class="timeline__unit timeline__unit--active"></span>
-                        <span class="timeline__unit"></span>
-                    </div>
-                </div>
-            </div>
-
+  <body>
+    <!-- Navbar -->
+    <div class="container-fluid fixed-top py-3 bg_theme">
+      <div class="row collapse no-gutters d-flex h-100 position-relative">
+        <div
+          class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex"
+        >
+          <!-- spacer col -->
         </div>
-
+        <div class="col px-3 px-md-0">
+          <!-- toggler -->
+          <a
+            data-toggle="collapse"
+            href="#"
+            data-target=".collapse"
+            role="button"
+            class="p-1"
+          >
+            <i class="fab fa-wikipedia-w"></i>
+          </a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <h3 class="name-logo">Wilson Lam</h3>
+        </div>
+        <div class="col icons">
+          <ul
+            class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex flex-row justify-content-end"
+          >
+            <li><i class="fab fa-facebook-square nav-icons"></i></li>
+            <li><i class="fab fa-linkedin nav-icons"></i></li>
+            <li><i class="far fa-envelope nav-icons"></i></li>
+            <li><i class="fab fa-github-square nav-icons"></i></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="container-fluid px-0 h-100">
+      <div
+        class="row vh-100 collapse no-gutters d-flex h-100 position-relative"
+      >
+        <div
+          class="col-3 p-0 vh-100 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar"
+        >
+          <!-- fixed sidebar -->
+          <div class="navbar-dark position-fixed h-100 w-sidebar bg_theme">
+            <h6 class="px-3 pt-5">Fixed Menu</h6>
+            <ul class="nav flex-column flex-nowrap text-truncate">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Main Colors #212529</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Main Page -->
+        <div class="container">
+          <!-- Landing Page Content -->
+          <section id="landing-page">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-2 col-xs-2">
+                <p class="coords">N 34° 3' 8.0460" / W 118° 14' 37.2588"</p>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                <div class="ellipses-container">
+                  <h2 class="greeting">Full Stack Developer</h2>
+                  <div class="ellipses ellipses__outer--thin">
+                    <div class="ellipses ellipses__orbit"></div>
+                  </div>
+                  <div class="ellipses ellipses__outer--thick"></div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-2 col-xs-2">
+                <div class="scroller">
+                  <p class="page-title">Welcome</p>
+
+                  <div class="timeline">
+                    <span class="timeline__unit"></span>
+                    <span class="timeline__unit timeline__unit--active"></span>
+                    <span class="timeline__unit"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- About Me -->
+          <section id="about-me">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <p>
+                 picture goes here
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
